@@ -128,11 +128,8 @@ Filters dashboard by:
 
 Add your uploaded screenshots here.
 
-![Dashboard 1](Dashboard_Screenshot_1.png)
 
-![Dashboard 2](Dashboard_Screenshot_2.png)
-
-![Dashboard 3](Dashboard_Screenshot_3.png)
+<img width="662" height="707" alt="Dashboard_Screenshot" src="https://github.com/user-attachments/assets/7437200d-da4b-437a-ad71-6113d26e4d1e" />
 
 ---
 
