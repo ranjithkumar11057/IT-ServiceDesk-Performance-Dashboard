@@ -1,185 +1,87 @@
-
 # IT Service Desk Performance & SLA Analytics Dashboard 2026
 
 ## Project Overview
 
-This project is an interactive Excel dashboard developed to analyze IT Service Desk operations, monitor SLA compliance, evaluate ticket resolution performance, and measure agent productivity.
+This project is an interactive Excel dashboard developed to analyze IT Service Desk operations, monitor SLA compliance, evaluate ticket resolution efficiency, and measure agent performance.
 
-The dashboard transforms raw ticket data into actionable business insights using Excel analytics techniques such as Pivot Tables, Pivot Charts, Slicers, Data Validation, Conditional Formatting, and KPI calculations.
+The dashboard transforms raw ticket data into meaningful business insights using Excel analytics and visualization techniques.
+
+---
+
+## Technologies Used
+
+* Microsoft Excel
+* Pivot Tables
+* Pivot Charts
+* Slicers
+* Data Validation
+* Conditional Formatting
+* IF Functions
+* COUNTIF Functions
+* AVERAGE Functions
+* Dashboard Design
+* Data Visualization
 
 ---
 
 ## Business Objective
 
-The primary objective of this project is to:
+The objective of this project is to:
 
-* Monitor IT service desk performance.
-* Measure SLA compliance and breach rates.
-* Track ticket resolution efficiency.
-* Analyze agent productivity.
-* Identify operational bottlenecks.
-* Improve customer service quality through data-driven insights.
+* Monitor service desk performance
+* Track SLA compliance and breaches
+* Analyze ticket resolution efficiency
+* Evaluate agent productivity
+* Improve operational decision-making
 
 ---
 
-## Dataset Information
+## Dataset Overview
 
 The dataset contains IT support ticket information including:
 
-| Column Name           | Description                      |
-| --------------------- | -------------------------------- |
-| Ticket_ID             | Unique ticket identifier         |
-| Created_Date          | Ticket creation date             |
-| Created_Time          | Ticket creation time             |
-| Closed_Date           | Ticket closure date              |
-| Closed_Time           | Ticket closure time              |
-| Department            | Department handling the ticket   |
-| Issue_Type            | Type of issue reported           |
-| Priority              | Ticket priority level            |
-| Agent_Name            | Assigned support agent           |
-| Status                | Open or Closed                   |
-| Resolution_Time_Hours | Time taken to resolve the ticket |
-| SLA_Target_Hours      | Target resolution time           |
-| Customer_Rating       | Customer satisfaction rating     |
-| Escalated             | Escalation status                |
+* Ticket ID
+* Created Date & Time
+* Closed Date & Time
+* Department
+* Issue Type
+* Priority
+* Agent Name
+* Ticket Status
+* Resolution Time
+* SLA Target Hours
+* Customer Rating
+* Escalation Status
 
 ---
 
 ## Data Validation Implemented
 
-To improve data quality and prevent invalid entries, Data Validation was applied.
+To improve data quality and prevent incorrect entries, the following validations were applied:
 
-### Status
-
-Allowed Values:
-
-* Open
-* Closed
-
-### Department
-
-Allowed Values:
-
-* IT
-* Operations
-* HR
-* Finance
-* Sales
-
-### Priority
-
-Allowed Values:
-
-* High
-* Medium
-* Low
-
-### Issue Type
-
-Allowed Values:
-
-* Network Issue
-* Password Reset
-* Hardware Failure
-* Software Install
-* Access Request
-* Email Problem
-
-### Customer Rating
-
-Rules:
-
-* Whole Number
-* Minimum = 1
-* Maximum = 5
-
-### Resolution Category
-
-Allowed Values:
-
-* Fast
-* On-Time
-* Delayed
-* Critical
-
-### Additional Controls
-
-* Input Messages
-* Error Alerts
-* Stop Warning Validation
-
----
-
-## Calculated Columns
-
-Several calculated columns were created using Excel formulas.
-
-### SLA Status
-
-Determines whether a ticket met the SLA target.
-
-### SLA Breach Flag
-
-Identifies SLA violations.
-
-### Resolution Category
-
-Classifies ticket resolution speed:
-
-* Fast
-* On-Time
-* Delayed
-* Critical
-
-### Escalated Numeric
-
-Converts escalation status into numeric values for reporting.
-
-### Rating Category
-
-Groups customer ratings into categories.
-
-### Days to Close
-
-Calculates the total days required to close a ticket.
-
-### Within SLA
-
-Indicates whether the ticket was resolved within SLA limits.
-
-### Data Quality Flag
-
-Identifies incomplete or invalid records.
+* Status → Open, Closed
+* Priority → High, Medium, Low
+* Department → IT, Operations, HR, Finance, Sales
+* Customer Rating → Whole Number (1–5)
+* Resolution Category → Fast, On-Time, Delayed, Critical
+* Issue Type → Dropdown List
+* Custom Error Alerts and Input Messages
 
 ---
 
 ## Conditional Formatting
 
-Conditional Formatting was implemented to improve visibility and highlight critical records.
+Applied conditional formatting to highlight important records:
 
-### Applied On
+* SLA Status
+* Priority Level
+* Within SLA
 
-#### SLA Status
-
-* Green → Within SLA
-* Red → Breached
-
-#### Priority
-
-* High → Highlighted
-* Medium → Highlighted
-* Low → Highlighted
-
-#### Within SLA
-
-* Yes → Green
-* No → Red
+This enables quick identification of SLA breaches and critical tickets.
 
 ---
 
 ## Dashboard KPIs
-
-The dashboard provides the following key performance indicators:
 
 * Total Tickets
 * Closed Tickets
@@ -192,15 +94,11 @@ The dashboard provides the following key performance indicators:
 
 ---
 
-## Dashboard Components
+## Dashboard Features
 
-### Monthly Ticket Trend Analysis
+### Monthly Ticket Trend
 
-Visualizes ticket volume trends over time.
-
-### Average Resolution Time by Issue Type
-
-Compares resolution efficiency across issue categories.
+Tracks ticket volume over time.
 
 ### SLA Breach Analysis
 
@@ -208,11 +106,15 @@ Analyzes SLA violations by department and priority.
 
 ### Agent Performance Scorecard
 
-Measures agent productivity and resolution efficiency.
+Measures agent productivity and efficiency.
+
+### Resolution Time Analysis
+
+Compares average resolution time across issue types.
 
 ### Interactive Slicers
 
-Dashboard filtering available by:
+Filters dashboard by:
 
 * Department
 * Priority
@@ -222,55 +124,38 @@ Dashboard filtering available by:
 
 ---
 
-## Excel Features Used
+## Dashboard Screenshots
 
-* Pivot Tables
-* Pivot Charts
-* Slicers
-* Data Validation
-* Error Alerts
-* Input Messages
-* Conditional Formatting
-* IF Functions
-* COUNTIF Functions
-* AVERAGE Functions
-* Calculated Columns
-* Dashboard Design
+Add your uploaded screenshots here.
+
+![Dashboard 1](Dashboard_Screenshot_1.png)
+
+![Dashboard 2](Dashboard_Screenshot_2.png)
+
+![Dashboard 3](Dashboard_Screenshot_3.png)
 
 ---
 
 ## Key Business Insights
 
-* SLA Breach Rate is significantly higher than SLA Compliance Rate.
-* Certain departments contribute more to SLA violations.
-* High-priority tickets require faster resolution.
-* Agent performance varies based on ticket volume and resolution speed.
-* Customer satisfaction can be monitored using rating metrics.
+* SLA breach rate is significantly higher than SLA compliance.
+* High-priority tickets require improved response management.
+* Agent performance varies across ticket categories.
+* Resolution times differ based on issue type.
+* Interactive filtering enables detailed operational analysis.
 
 ---
 
 ## Skills Demonstrated
 
-### Excel
-
-* Advanced Excel Reporting
-* Dashboard Development
-* KPI Design
-* Data Cleaning
+* Excel Dashboard Development
 * Data Validation
-
-### Data Analysis
-
+* Conditional Formatting
+* KPI Design
 * Business Analysis
-* Trend Analysis
-* Performance Monitoring
-* SLA Reporting
-
-### Visualization
-
-* Pivot Charts
-* Interactive Dashboards
-* Data Storytelling
+* Data Visualization
+* Pivot Tables & Pivot Charts
+* Interactive Reporting
 
 ---
 
@@ -286,6 +171,6 @@ Dashboard filtering available by:
 
 ## Author
 
-Ranjithkumar M
+**Ranjithkumar M**
 
 Aspiring Data Analyst | Excel | SQL | Power BI | Data Visualization
